@@ -70,7 +70,7 @@ for( var i = 0; i < estSubmergedDepths.Length; i++ ) {
     Console.WriteLine($"Variant {i}");
     Console.WriteLine($"-- Submerged Depth: {submergedProps.DepthM:0.####} M");
     Console.WriteLine($"-- Buoyant Force: {buoyantForceN:0.##} N");
-    Console.WriteLine($"-- Wall Thickness: {sphereSize.ThicknessM:0.#####} M");
+    Console.WriteLine($"-- Wall Thickness: {sphereSize.ThicknessM} M");
     Console.WriteLine($"-- Orb Volume: {sphereSize.VolumeM3:0.##} M3");
     Console.WriteLine($"-- Orb Mass: {sphereSize.MassKG:0.##} KG");
     Console.WriteLine($"-- Material Cost: {sphereCost.Material:C}");
