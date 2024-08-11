@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("obs-sphere")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bc10f57abcba6658b005226f43a8bc0f2142901")]
 [assembly: System.Reflection.AssemblyProductAttribute("obs-sphere")]
 [assembly: System.Reflection.AssemblyTitleAttribute("obs-sphere")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -41,15 +41,16 @@ var buoyantForcesN = estSubmergedProps.Select( props => {
 
 var sphereMassKG = buoyantForcesN.Select( forceN => forceN / gravityM_S2 );
 var sphereSizing = sphereMassKG.Select<double, ( double RadiusM, double ThicknessM, double VolumeM3, double MassKG )>( massKG => {
-    var lessMassKG = orbSolidMassKG - massKG;
-    var lessVolumeM3 = lessMassKG / obsidianDensityKG_M3;
+    var lessMassKG = massKG;
+    var newVolumeM3 = lessMassKG / obsidianDensityKG_M3;
+    var lessVolumeM3 = orbSolidVolume - newVolumeM3;
     var lessRadiusM = Math.Pow( lessVolumeM3 / (4d/3d) / Math.PI, 1d/3d );
 
     return (
         orbRadius,
         orbRadius - lessRadiusM,
-        lessVolumeM3,
-        lessMassKG
+        newVolumeM3,
+        massKG
     );
 }).ToArray();
 
@@ -68,11 +69,11 @@ for( var i = 0; i < estSubmergedDepths.Length; i++ ) {
     var sphereSize = sphereSizing[i];
     var sphereCost = sphereCosts[i];
     Console.WriteLine($"Variant {i}");
-    Console.WriteLine($"-- Submerged Depth: {submergedProps.DepthM:0.####} M");
-    Console.WriteLine($"-- Buoyant Force: {buoyantForceN:0.##} N");
+    Console.WriteLine($"-- Submerged Depth: {submergedProps.DepthM} M");
+    Console.WriteLine($"-- Buoyant Force: {buoyantForceN} N");
     Console.WriteLine($"-- Wall Thickness: {sphereSize.ThicknessM} M");
-    Console.WriteLine($"-- Orb Volume: {sphereSize.VolumeM3:0.##} M3");
-    Console.WriteLine($"-- Orb Mass: {sphereSize.MassKG:0.##} KG");
+    Console.WriteLine($"-- Orb Volume: {sphereSize.VolumeM3} M3");
+    Console.WriteLine($"-- Orb Mass: {sphereSize.MassKG} KG");
     Console.WriteLine($"-- Material Cost: {sphereCost.Material:C}");
     Console.WriteLine($"-- Annual License Cost: {sphereCost.Commercial:C}");
 }

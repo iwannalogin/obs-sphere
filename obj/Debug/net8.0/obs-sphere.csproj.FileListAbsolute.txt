@@ -12,3 +12,4 @@ C:\Programming\obs-sphere\obj\Debug\net8.0\refint\obs-sphere.dll
 C:\Programming\obs-sphere\obj\Debug\net8.0\obs-sphere.pdb
 C:\Programming\obs-sphere\obj\Debug\net8.0\obs-sphere.genruntimeconfig.cache
 C:\Programming\obs-sphere\obj\Debug\net8.0\ref\obs-sphere.dll
+C:\Programming\obs-sphere\obj\Debug\net8.0\obs-sphere.sourcelink.json
