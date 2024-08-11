@@ -1,0 +1,14 @@
+C:\Programming\obs-sphere\bin\Debug\net8.0\obs-sphere.exe
+C:\Programming\obs-sphere\bin\Debug\net8.0\obs-sphere.deps.json
+C:\Programming\obs-sphere\bin\Debug\net8.0\obs-sphere.runtimeconfig.json
+C:\Programming\obs-sphere\bin\Debug\net8.0\obs-sphere.dll
+C:\Programming\obs-sphere\bin\Debug\net8.0\obs-sphere.pdb
+C:\Programming\obs-sphere\obj\Debug\net8.0\obs-sphere.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming\obs-sphere\obj\Debug\net8.0\obs-sphere.AssemblyInfoInputs.cache
+C:\Programming\obs-sphere\obj\Debug\net8.0\obs-sphere.AssemblyInfo.cs
+C:\Programming\obs-sphere\obj\Debug\net8.0\obs-sphere.csproj.CoreCompileInputs.cache
+C:\Programming\obs-sphere\obj\Debug\net8.0\obs-sphere.dll
+C:\Programming\obs-sphere\obj\Debug\net8.0\refint\obs-sphere.dll
+C:\Programming\obs-sphere\obj\Debug\net8.0\obs-sphere.pdb
+C:\Programming\obs-sphere\obj\Debug\net8.0\obs-sphere.genruntimeconfig.cache
+C:\Programming\obs-sphere\obj\Debug\net8.0\ref\obs-sphere.dll
